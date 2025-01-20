@@ -47,3 +47,41 @@ img{
     font-weight: 700;
 }
 
+.input-inner-border input{
+    display:block;
+    border:none;
+    height:40px;
+    width:380px;
+    background-color: black;
+    color:white;
+    font-size: xx-large;
+    font-family: Lato, Helvetica, Arial, sans-serif;
+}
+
+.input-inner-border input:focus {
+
+    outline:none
+}
+
+    
+
+.input-outer-border{
+    display:block;
+    margin:20px auto 0px auto;
+    border:3px solid blue;
+    width:405px
+
+}
+
+.input-outer-border:focus-within{
+    border-color:transparent
+}
+.input-inner-border{
+    display:block;
+    border:1px solid white;
+    padding:10px;
+    background-color:black;
+}
+
+
+
