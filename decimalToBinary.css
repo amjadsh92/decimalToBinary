@@ -20,6 +20,7 @@ img{
     margin:-20px auto 0px auto;
 }
 
+
 .title{
     text-align:center;
     font-size:40px;
@@ -28,3 +29,21 @@ img{
     width:500px;
     margin:0 auto 0 auto;
 }
+
+.converter-box{
+    width:500px;
+    height:250px;
+    border:2px solid white;
+    margin:50px auto 0px auto;
+    background-color: rgb(50, 45, 65);
+}
+
+.converter-box p{
+    text-align: center;
+    font-size: 25px;
+    margin-top: 40px;
+    color: white;
+    font-family: Lato, Helvetica, Arial, sans-serif;
+    font-weight: 700;
+}
+
