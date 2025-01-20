@@ -32,7 +32,6 @@ img{
 
 .converter-box{
     width:500px;
-    height:250px;
     border:2px solid white;
     margin:50px auto 0px auto;
     background-color: rgb(50, 45, 65);
@@ -84,4 +83,15 @@ img{
 }
 
 
+.converter-box button{
+    display:block;
+    height:55px;
+    width:400px;
+    background: linear-gradient(rgb(200, 150, 40), rgb(220, 130, 50));
+    margin:20px auto 30px auto;
+    font-size:25px;
+    font-family: Lato, Helvetica, Arial, sans-serif;
+    cursor: pointer;
+    border:none;
 
+}
