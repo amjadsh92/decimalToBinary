@@ -68,13 +68,13 @@ img{
 .input-outer-border{
     display:block;
     margin:20px auto 0px auto;
-    border:3px solid blue;
+    border:3px solid transparent;
     width:405px
 
 }
 
 .input-outer-border:focus-within{
-    border-color:transparent
+    border-color:blue;
 }
 .input-inner-border{
     display:block;
