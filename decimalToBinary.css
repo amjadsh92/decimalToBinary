@@ -2,5 +2,29 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif
 }
 
+html{
+    overflow-x:hidden;
+}
+
+body{
+   background-color: rgb(7, 7, 50);
+}
+
+img{
+    display:block;
+    width:250px;
+    height: 150px;
+    margin:-20px auto 0px auto;
+}
+
+.title{
+    text-align:center;
+    font-size:40px;
+    color:white;
+    font-family: 'Castoro Titling', cursive;
+    width:500px;
+    margin:0 auto 0 auto;
+}
