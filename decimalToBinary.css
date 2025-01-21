@@ -94,4 +94,21 @@ img{
     cursor: pointer;
     border:none;
 
+
+}
+
+
+.result{
+    display:none;
+    margin:20px auto 20px auto;
+    width:500px;
+    
+    border:2px solid white;
+    background-color: rgb(50, 45, 65); 
+
+}
+
+.result p{
+
+    text-align:center;
 }

@@ -68,4 +68,48 @@ const thouthands = (dec) => {
   }
 };
 
-console.log(decimalToRoman(1217));
+// console.log(decimalToRoman(1217));
+
+
+/*function decimalToRoman2(arabic) {
+    const romanMap = {
+        1000: 'M',
+        900: 'CM',
+        500: 'D',
+        400: 'CD',
+        100: 'C',
+        90: 'XC',
+        50: 'L',
+        40: 'XL',
+        10: 'X',
+        9: 'IX',
+        5: 'V',
+        4: 'IV',
+        1: 'I'
+    }
+
+   const orderedRomans = Object.keys(
+        romanMap
+    ).sort((a, b) => {
+        return b - a;
+    });
+
+    let converted = '';
+    while (arabic > 0) {
+        for (const roman of orderedRomans) {
+            if (arabic - roman < 0) {
+                continue;
+            }
+
+            converted += romanMap[roman];
+            arabic -= roman;
+
+            break;
+        }
+    }
+
+    return converted;
+}*/
+
+
+console.log(decimalToRoman(399));
