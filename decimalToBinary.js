@@ -75,6 +75,29 @@ const resultText = resultBox.querySelector("p");
 const converterButton = document.getElementById("convert-button");
 
 converterButton.addEventListener("click",()=>{
+    debugger;
+    const regex = /^-?\d+$/;
+    const input = inputNumber.value;
+   
+        if(!input.match(regex) || input ===""){
+            resultBox.style.display ="block";
+            resultText.innerText = "Please Enter a valid number"
+            return
+        }
+        else if( input < 1){
+            resultBox.style.display ="block";
+            resultText.innerText = "Please enter a number greater than or equal to 1."
+            return
+
+        }
+
+        else if( input > 3999){
+            resultBox.style.display ="block";
+            resultText.innerText = "Please enter a number less than or equal to 3999."
+            return
+
+        }
+    
     resultBox.style.display ="block";
 
     resultText.innerText = decimalToRoman(Number(inputNumber.value));
