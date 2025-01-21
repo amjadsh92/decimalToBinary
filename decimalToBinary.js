@@ -74,25 +74,41 @@ const resultBox = document.getElementById("result");
 const resultText = resultBox.querySelector("p");
 const converterButton = document.getElementById("convert-button");
 
+const reset = () => {
+
+    resultBox.style.border ="2px solid white";
+    resultBox.style.backgroundColor= "rgb(50, 45, 65)";
+    resultText.style.color = "white";
+}
+
 converterButton.addEventListener("click",()=>{
-    debugger;
+    
     const regex = /^-?\d+$/;
     const input = inputNumber.value;
    
         if(!input.match(regex) || input ===""){
             resultBox.style.display ="block";
-            resultText.innerText = "Please Enter a valid number"
+            resultBox.style.border ="2px solid rgb(160,0,0)";
+            resultBox.style.backgroundColor= "rgb(190, 130, 140)";
+            resultText.style.color = "rgb(160,0,0)";
+            resultText.innerText = "Please Enter a valid number";
             return
         }
         else if( input < 1){
-            resultBox.style.display ="block";
+            resultBox.style.display = "block";
+            resultBox.style.border ="2px solid rgb(160,0,0)";
+            resultBox.style.backgroundColor= "rgb(190, 130, 140)";
+            resultText.style.color = "rgb(160,0,0)";
             resultText.innerText = "Please enter a number greater than or equal to 1."
             return
 
         }
 
         else if( input > 3999){
-            resultBox.style.display ="block";
+            resultBox.style.display = "block";
+            resultBox.style.border ="2px solid rgb(160,0,0)";
+            resultBox.style.backgroundColor= "rgb(190, 130, 140)";
+            resultText.style.color = "rgb(160,0,0)";
             resultText.innerText = "Please enter a number less than or equal to 3999."
             return
 
@@ -101,6 +117,7 @@ converterButton.addEventListener("click",()=>{
     resultBox.style.display ="block";
 
     resultText.innerText = decimalToRoman(Number(inputNumber.value));
+    reset()
     
 })
 
