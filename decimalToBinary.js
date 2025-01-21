@@ -68,7 +68,19 @@ const thouthands = (dec) => {
   }
 };
 
-// console.log(decimalToRoman(1217));
+
+const inputNumber = document.querySelector("input[type=number]");
+const resultBox = document.getElementById("result");
+const resultText = resultBox.querySelector("p");
+const converterButton = document.getElementById("convert-button");
+
+converterButton.addEventListener("click",()=>{
+    resultBox.style.display ="block";
+
+    resultText.innerText = decimalToRoman(Number(inputNumber.value));
+    
+})
+
 
 
 /*function decimalToRoman2(arabic) {
@@ -110,6 +122,4 @@ const thouthands = (dec) => {
 
     return converted;
 }*/
-
-
-console.log(decimalToRoman(399));
+//console.log(decimalToRoman('9'));
