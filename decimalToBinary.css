@@ -114,3 +114,12 @@ img{
     font-family: Lato, Helvetica, Arial, sans-serif;
 
 }
+
+
+@media(max-width:600){
+
+    .converter-box, .result, .input-outer-border, .input-inner-border, .input-inner-border input {
+        width:80%
+    }
+
+    }
