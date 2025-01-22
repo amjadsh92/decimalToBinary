@@ -116,10 +116,33 @@ img{
 }
 
 
-@media(max-width:600){
+@media(max-width:600px){
 
-    .converter-box, .result, .input-outer-border, .input-inner-border, .input-inner-border input {
+    .converter-box{
         width:80%
     }
 
+    .result{
+        width:80%
     }
+
+    .input-outer-border{
+        width:90%
+    }
+
+    .input-inner-border input{
+        width:97%
+    }
+
+   
+
+   .converter-box button{
+        width:89%;
+    }
+
+    .title{
+        width:80%;
+    }
+
+
+}
