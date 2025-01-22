@@ -1,148 +1,141 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-    font-family:'Times New Roman', Times, serif
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
 }
 
-html{
-    overflow-x:hidden;
+html {
+  overflow-x: hidden;
 }
 
-body{
-   background-color: rgb(7, 7, 50);
+body {
+  background-color: rgb(7, 7, 50);
 }
 
-img{
-    display:block;
-    width:250px;
-    height: 150px;
-    margin:-20px auto 0px auto;
+img {
+  display: block;
+  width: 250px;
+  height: 150px;
+  margin: -20px auto 0px auto;
 }
 
-
-.title{
-    text-align:center;
-    font-size:40px;
-    color:white;
-    font-family: 'Castoro Titling', cursive;
-    width:500px;
-    margin:0 auto 0 auto;
+.title {
+  text-align: center;
+  font-size: 40px;
+  color: white;
+  font-family: "Castoro Titling", cursive;
+  width: 500px;
+  margin: 0 auto 0 auto;
 }
 
-.converter-box{
-    width:500px;
-    border:2px solid white;
-    margin:50px auto 0px auto;
-    background-color: rgb(50, 45, 65);
+.converter-box {
+  width: 500px;
+  border: 2px solid white;
+  margin: 50px auto 0px auto;
+  background-color: rgb(50, 45, 65);
 }
 
-.converter-box p{
-    text-align: center;
-    font-size: 25px;
-    margin-top: 40px;
-    color: white;
-    font-family: Lato, Helvetica, Arial, sans-serif;
-    font-weight: 700;
+.converter-box p {
+  text-align: center;
+  font-size: 25px;
+  margin-top: 40px;
+  color: white;
+  font-family: Lato, Helvetica, Arial, sans-serif;
+  font-weight: 700;
 }
 
-.input-inner-border input{
-    display:block;
-    border:none;
-    height:40px;
-    width:380px;
-    background-color: black;
-    color:white;
-    font-size: xx-large;
-    font-family: Lato, Helvetica, Arial, sans-serif;
+.input-inner-border input {
+  display: block;
+  border: none;
+  height: 40px;
+  width: 380px;
+  background-color: black;
+  color: white;
+  font-size: xx-large;
+  font-family: Lato, Helvetica, Arial, sans-serif;
 }
 
 .input-inner-border input:focus {
-
-    outline:none
+  outline: none;
 }
 
-    
-
-.input-outer-border{
-    display:block;
-    margin:20px auto 0px auto;
-    border:3px solid transparent;
-    width:405px
-
+.input-outer-border {
+  display: block;
+  margin: 20px auto 0px auto;
+  border: 3px solid transparent;
+  width: 405px;
 }
 
-.input-outer-border:focus-within{
-    border-color:blue;
+.input-outer-border:focus-within {
+  border-color: blue;
 }
-.input-inner-border{
-    display:block;
-    border:1px solid white;
-    padding:10px;
-    background-color:black;
-}
-
-
-.converter-box button{
-    display:block;
-    height:55px;
-    width:400px;
-    background: linear-gradient(rgb(200, 150, 40), rgb(220, 130, 50));
-    margin:20px auto 30px auto;
-    font-size:25px;
-    cursor: pointer;
-    border:none;
-
-
+.input-inner-border {
+  display: block;
+  border: 1px solid white;
+  padding: 10px;
+  background-color: black;
 }
 
-
-.result{
-    display:none;
-    margin:20px auto 20px auto;
-    width:500px;
-    padding:15px;
-    border:2px solid white;
-    background-color: rgb(50, 45, 65); 
-
+.converter-box button {
+  display: block;
+  height: 55px;
+  width: 400px;
+  background: linear-gradient(rgb(200, 150, 40), rgb(220, 130, 50));
+  margin: 20px auto 30px auto;
+  font-size: 25px;
+  cursor: pointer;
+  border: none;
 }
 
-.result p{
-    font-size:38px;
-    text-align:center;
-    color:white;
-    font-family: Lato, Helvetica, Arial, sans-serif;
-
+.result {
+  display: none;
+  margin: 20px auto 20px auto;
+  width: 500px;
+  padding: 15px;
+  border: 2px solid white;
+  background-color: rgb(50, 45, 65);
 }
 
+.result p {
+  font-size: 38px;
+  text-align: center;
+  color: white;
+  font-family: Lato, Helvetica, Arial, sans-serif;
+}
 
-@media(max-width:600px){
+@media (max-width: 600px) {
+  .converter-box {
+    width: 80%;
+  }
 
-    .converter-box{
-        width:80%
-    }
+  .result {
+    width: 80%;
+  }
 
-    .result{
-        width:80%
-    }
+  .input-outer-border {
+    width: 90%;
+  }
 
-    .input-outer-border{
-        width:90%
-    }
+  .input-inner-border input {
+    width: 97%;
+  }
 
-    .input-inner-border input{
-        width:97%
-    }
+  .converter-box button {
+    width: 89%;
+    font-size: 20px;
+  }
 
-   
+  .converter-box p {
+    font-size: 22px;
+  }
 
-   .converter-box button{
-        width:89%;
-    }
+  .title {
+    width: 60%;
+    font-size: 30px;
+  }
 
-    .title{
-        width:80%;
-    }
-
-
+  .result p {
+    font-size: 28px;
+  }
 }
